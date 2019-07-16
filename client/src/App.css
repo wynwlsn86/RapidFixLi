@@ -21,6 +21,12 @@ footer{
   background-color: black;
   align-items: center;
 }
+input{
+  font-size: 1.2em;
+  padding: .7em;
+  font-weight: bold;
+  border-radius: 6px;
+}
 header{
   display: flex;
   justify-content: space-between;
@@ -33,6 +39,12 @@ header{
 }
 i:hover{
   color: #b0eafc;
+}
+select{
+  /* -webkit-appearance: none; */
+  font-size: 1.5em;
+  padding: .7em;
+  font-weight: bold;
 }
 .about-text{
  padding: 10% 10%;
@@ -73,6 +85,9 @@ i:hover{
   display: flex;
   justify-content: space-evenly;
 }
+/* .form-quarter{
+  margin: 20px 10px;
+} */
 .header-link{
   font-size: 1.3em;
 }
@@ -84,6 +99,7 @@ i:hover{
   1px -1px 0 rgb(60, 60, 60),
   -1px 1px 0 rgb(60, 60, 60),
   1px 1px 0 rgb(60, 60, 60);
+  transition: .2s;
 }
 .home{
   display: flex;
@@ -144,8 +160,80 @@ i:hover{
   align-items: center;
   color: white;
 }
+.quote-child{
+  width: 50%;
+  padding: 5% 10%;
+  font-size: .9em;
+}
+.quote-child-form{
+  width: 50%;
+  height: 500px;
+  background-color: rgba(165, 162, 162, 0.316);
+  margin-right: 2%;
+  margin-bottom: 10%;
+}
+.quote-form-grid{
+  display: grid;
+  /* grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto; */
+  grid-template-areas: 
+    'fname lname'
+    'email phone'
+    'services empty'
+    'comment comment'
+    'comment comment'
+    'comment comment'
+    'comment comment'
+    'comment comment'
+    'button button'
+    'button button'
+    'button button';
+  column-gap: 3%;
+  padding: 5%;
+  row-gap: 8%;
+}
+.quote-parent{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .underline{
   width: 90px;
   border-top: solid hsl(19, 100%, 50%) 3px;
   margin: 20px;
+}
+#button{
+  grid-area: button;
+  color: rgb(53, 23, 221);
+  border: rgb(53, 23, 221) solid 2px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#button:hover{
+  color: white;
+  background-color: rgb(53, 23, 221);
+  transition: 1s;
+
+}
+#comment{
+  grid-area: comment;
+}
+#email{
+  grid-area: email
+}
+#empty{
+  grid-area: empty;
+}
+#fname{
+  grid-area: fname;
+}
+#lname{
+  grid-area: lname;
+}
+#phone{
+  grid-area: phone;
+}
+#services{
+  grid-area: services;
 }

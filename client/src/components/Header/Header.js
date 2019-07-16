@@ -15,11 +15,11 @@ export default class Header extends Component {
               activeClass="active"
               spy={true}
               smooth={true}
-              offset={-90}
+              offset={-80}
               to="about"
               className="header-link"
             >
-            <h3 className='header-link'>About</h3>
+            <h3>About</h3>
           </Link>
         <Link
               activeClass="active"
@@ -29,17 +29,17 @@ export default class Header extends Component {
               to="services"
               className="header-link"
             >
-            <h3 className='header-link'>Services</h3>
+            <h3>Services</h3>
           </Link>
           <Link
               activeClass="active"
               spy={true}
               smooth={true}
-              offset={-90}
+              offset={20}
               to="contact"
               className="header-link"
             >
-            <h3 className='header-link'>Contact</h3>
+            <h3>Contact</h3>
           </Link>
         </div>
     </header>
